@@ -75,6 +75,12 @@
         height: 60px;
         line-height: 60px;
     }
+    .history-list a{
+        font-size: 15px;
+    }
+    .history-list p{
+        font-size: 15px;
+    }
 
     .history8-img img{
         width: 300px;
