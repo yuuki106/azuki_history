@@ -1,54 +1,173 @@
-$(function(){
+@media screen and (max-width:480px) {
+
+    
+    
+    .pcVer{
+        display: none;
+    }
+    .phoneVer{
+        display: block;
+    }
+    body{
+        min-width: 0;
+    }
 
 
-    $(".openbtn").click(function () {
+    /*-------------------------------------------*/
 
-        var $menuBar= $('.menu-wrapper').find('.menu-inner');
+    header{
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header-left img{
+        margin-left: 0;
+    }
+    .header-center h3{
+        font-size: 20px;
+        width: 280px;
+        margin: auto;
+        padding-left: 0;
+    }
+    .header-right{
+        display: block;
+        float: right;
+        width: 100px;
+    }
+    /*-------------------------------------------*/
+    .menu-wrapper{
+        background-color: rgba(0, 0, 0, 0.67);
+    }
+    .menu-inner{
+        display: none;
+    }
 
-        if($menuBar.hasClass('open')){
-            $menuBar.removeClass('open')
-            $menuBar.slideUp('fast');
-        }else{
-            $menuBar.addClass('open')
-            $menuBar.slideDown('fast');
-        };
+    .menu-inner li{
+        text-align: center;
+        border-top: 1px solid white;
+        padding: 20px 0;
+        width: 100%;
+        margin: auto;
+    }
+    .menu-wrapper a{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+    }
 
-        $(this).toggleClass('active');
-    });
+    /*---------------------------------------------*/
+    .history-wrapper{
+        padding-top: 80px;
+        background-size: 50px;
+    }
+    .history-inner{
+        width: 100%;
+    }
+    .history-title{
+        padding: 120px 0  180px 0;
+    }
+    .history-list h1{
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+    }
+    .history-list a{
+        font-size: 15px;
+    }
+    .history-list p{
+        font-size: 15px;
+    }
 
+    .history8-img img{
+        width: 300px;
+        height: auto;
+    }
 
-    $('#open-btn1').click(function(){
+    .list6-1{
+        width: 120px;
+        height:auto;
+    }
+    .allow{
+        width: 50px;
+        height: auto;
+        margin-bottom: 90px;
+    }
 
-        var $active=$('#histories1');
+    .list6-3{
+        width: 110px;
+        height: auto;
+    }
+    .history6-img img{
+        width: 150px;
+        height: auto;
+    }
+    .history5-img img{
+        width: 110px;
+        height: auto;
+    }
+    .history4-img img{
+        width: 150px;
+        height: auto;
+    }
+    .history3-img img{
+        width: 110px;
+        height:auto;
+    }
+    .history2-img img{
+        width: 150px;
+        height:auto;
+    }
 
-        if($active.hasClass('open')){
-            $active.removeClass('open')
-            $active.slideUp('fast');
-            $(this).find('.history-span').text('+');
-        }else{
-            $active.addClass('open')
-            $active.slideDown('fast');
-            $(this).find('.history-span').text('-');
-        };
+    
+    /*--------------------------------------------------*/
 
-    });
+    .phone-menu{
+        border: 2px solid black;
+    }
 
-    $('#open-btn2').click(function(){
-
-        var $active=$('#histories2');
-
-        if($active.hasClass('open')){
-            $active.removeClass('open')
-            $active.slideUp('fast');
-            $(this).find('.history-span').text('+');
-        }else{
-            $active.addClass('open')
-            $active.slideDown('fast');
-            $(this).find('.history-span').text('-');
-        };
-
-    });
-
-
-
-});
+    .a-menu{
+        display: flex;
+        
+    }
+    .a-menu a{
+        height: 75px;
+        width: 33.33%;
+        border: 1px solid black;
+    }
+    .b-menu {
+        display: flex;
+    }
+    .b-menu a{
+        height: 75px;
+        width: 33.33%;
+        border: 1px solid black;
+    }
+    .top-menu{
+        background-image: url(https://github.com/yuuki106/azuki_schedule/blob/main/top_icon.jpg?raw=true);
+        background-size: contain;
+    }
+    .pro-menu{
+        background-image: url(https://github.com/yuuki106/azuki_schedule/blob/main/profile_icon.jpg?raw=true);
+        background-size: contain;
+    }
+    .sch-menu{
+        background-image: url(https://github.com/yuuki106/azuki_schedule/blob/main/schedule_icon.jpg?raw=true);
+        background-size: contain;
+    }
+    .his-menu{
+        background-image: url(https://github.com/yuuki106/azuki_schedule/blob/main/history_icon.jpg?raw=true);
+        background-size: contain;
+    }
+    .gal-menu{
+        background-image: url(https://github.com/yuuki106/azuki_schedule/blob/main/gallery_icon.jpg?raw=true);
+        background-size: contain;
+    }
+    .goo-menu{
+        background-image: url(https://github.com/yuuki106/azuki_schedule/blob/main/Goods_icon.jpg?raw=true);
+        background-size: contain;
+    }
+}
